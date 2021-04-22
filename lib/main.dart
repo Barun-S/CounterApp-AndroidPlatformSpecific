@@ -36,7 +36,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void _incrementCounter() async {
     int _count;
     try {
-      final int result = await platform.invokeMethod('incrementCounter', {'count': _counter});
+      final int result =
+          await platform.invokeMethod('incrementCounter', {'count': _counter});
       _count = result;
     } on PlatformException catch (e) {
       print("Something went wrong: " + '${e.message}');
