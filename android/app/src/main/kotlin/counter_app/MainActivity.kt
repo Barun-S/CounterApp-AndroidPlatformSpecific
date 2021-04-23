@@ -1,4 +1,4 @@
-package github.tsvillain.CounterApp
+package counter_app
 
 import androidx.annotation.NonNull
 import io.flutter.embedding.android.FlutterActivity
@@ -6,7 +6,7 @@ import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity : FlutterActivity() {
-    private val CHANNEL = "github.tsvillain.CounterApp/counter"
+    private val CHANNEL = "counter_app/counter"
     var counter: Int = 0
 
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
